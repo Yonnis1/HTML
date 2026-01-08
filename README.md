@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body,bgcolor="black">
+    <nav>
+      <div class="logo">
+      <a href="index.html">
+        <img src="YA logo.jpg">
+      </a>
+    </div>
+      <ui>
+        <li><a href="portfoilio.html">portfolio</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="log in.html">log in</a></li>
+      </ui>
+    </nav>
+    <div class="name">
+      <h1>Yonnis <br><span>Ahmed</span></h1>
+      </div>
+    <img src=BLS.jpg>
+    <h1>E-sports</h1><img scr= logo.avif>
+    <header>
+      <button type="button" class="btn"></button>
+      <button type="button" class="btn btn-primary">sign up</button>
+  </div>
+</head>
+<body>
+
+</html>
