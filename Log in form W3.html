@@ -1,0 +1,38 @@
+<form id="loginForm">
+  <label>Username:</label>
+  <input type="text" id="username" required>
+  <br><br>
+
+  <label>Password:</label>
+  <input type="password" id="password" required>
+  <br><br>
+
+  <button type="submit">Login</button>
+</form>
+
+<p id="errorMsg" style="color:red;">
+
+  <script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // stop form from submitting
+
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const errorMsg = document.getElementById("errorMsg");
+
+
+    if (username === "" || password === "") {
+        errorMsg.textContent = "Both fields are required.";
+        return;
+    }
+
+    if (username !== correctUser || password !== correctPass) {
+        errorMsg.textContent = "Incorrect username or password.";
+        return;
+    }
+
+    // If login is correct
+    errorMsg.style.color = "green";
+    errorMsg.textContent = "Login successful!"; style ="color: green;"
+});
+</script>
