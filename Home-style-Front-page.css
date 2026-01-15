@@ -1,0 +1,64 @@
+/* Full‑page background */
+/*indented and changed and removed modules to simplify and polish*/
+/*isnt connected to file properly*/
+body { 
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, sans-serif; 
+    background: url("background.jpg") center/cover no-repeat; 
+} 
+/* Login form container */ 
+/*designated what to call on */
+/*changing background colour*/
+.loginForm { 
+    background: rgba(95, 21, 21, 0.541); 
+    padding: 32px 42px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(206, 16, 16, 0.25); 
+    text-align: center; 
+    backdrop-filter: blur(4px); 
+} 
+/* Inputs */ 
+#loginForm input { 
+    width: 100%; 
+    padding: 12px; 
+    margin-top: 8px; 
+    border: 1px solid #f5f0f0; 
+    border-radius: 6px; 
+    font-size: 16px; 
+    transition: border-color 0.2s ease, box-shadow 0.2s ease; 
+} 
+.loginForm input:focus { 
+    border-color: #6c12d3; 
+    box-shadow: 0 0 4px rgba(203, 38, 218, 0.4); 
+    outline: none; 
+} 
+/* Button */ 
+.loginForm button { 
+    margin-top: 18px; 
+    width: 100%; 
+    padding: 12px; 
+    background-color: #741323; 
+    color: #e00d42; 
+    border: none; 
+    border-radius: 7px; 
+    font-size: 15px; 
+    cursor: pointer; 
+    transition: 
+    background-color 0.25s ease; 
+} 
+.loginForm button:hover { 
+    background-color: #8c15b1; 
+} 
+/* Error message */ 
+/*change colour of font to be distinguishable */
+#errorMsg { 
+    margin-top: 12px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #c41a1a;
+}

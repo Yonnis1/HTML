@@ -1,0 +1,42 @@
+/* Full‑page background */
+/*indented and changed and removed modules to simplify and polish*/
+/*isnt connected to file properly*/
+/*changing background of login form to fade perfectly*/
+body { 
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, sans-serif; 
+    background: url("background.jpg") center/cover no-repeat; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

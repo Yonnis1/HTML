@@ -1,38 +1,64 @@
-<form id="loginForm">
-  <label>Username:</label>
-  <input type="text" id="username" required>
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Bootstrap demo</title> 
+    <link rel="stylesheet" href="Home-style.css"> 
+  </head> 
+  <header> 
+    <a href="index.php" class="logo"> </a>
+    <nav> 
+      <ul> 
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li> 
+          <li>
+            <a href="About.html">About</a>
+          </li> 
+        <li>
+          <a href="sign up.html">sign up</a>
+        </li> 
+      </ul> 
+    </nav> 
+  </header> 
+<body>
+
+<div class="hero"> 
+<form id="loginForm"> 
+  <label>Username:</label> 
+  <input type="text" id="username" required> 
+
   <br><br>
 
-  <label>Password:</label>
-  <input type="password" id="password" required>
-  <br><br>
+  <label>Password:</label> 
+  <input type="password" id="password" required> 
 
-  <button type="submit">Login</button>
-</form>
+  <br><br> 
 
-<p id="errorMsg" style="color:red;">
+  <button type="submit">Login</button> 
+    <p id="errorMsg"></p> 
+  </form> 
+</div> 
 
-  <script>
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // stop form from submitting
-
-    const username = document.getElementById("username").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const errorMsg = document.getElementById("errorMsg");
-
-
-    if (username === "" || password === "") {
-        errorMsg.textContent = "Both fields are required.";
-        return;
-    }
-
-    if (username !== correctUser || password !== correctPass) {
-        errorMsg.textContent = "Incorrect username or password.";
-        return;
-    }
-
-    // If login is correct
-    errorMsg.style.color = "green";
-    errorMsg.textContent = "Login successful!"; style ="color: green;"
-});
+<script> 
+document.getElementById("loginForm").addEventListener("submit", function(event) { 
+  event.preventDefault(); const 
+  username = document.getElementById("username").value.trim(); 
+  const password = document.getElementById("password").value.trim(); 
+  const errorMsg = document.getElementById("errorMsg"); 
+  
+  if (username === "" || password === "") { 
+    errorMsg.textContent = "Both fields are required."; 
+    errorMsg.style.color = "red"; 
+    return; 
+    } 
+    
+  if (username !== correctUser || password !== correctPass) { 
+    errorMsg.textContent = "Incorrect username or password."; 
+    errorMsg.style.color = "red"; 
+    return; 
+    } 
+    
+    errorMsg.textContent = "Login successful!"; errorMsg.style.color = "green"; 
+    }); 
 </script>
+</body>
